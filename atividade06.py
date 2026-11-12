@@ -1,9 +1,9 @@
-opcao = int(input('Valor da venda: '))
+venda = int(input('Valor da venda: R$ '))
 
-match opcao:
-    case _ if opcao >=500:
-        print('Venda grande')
-    case _ if opcao > 100:
+match venda:
+    case venda if venda < 500:
         print('Venda média')
-    case _ if opcao < 100:
+    case venda if venda < 100:
         print('Venda pequena')
+    case _:
+        print('Venda grande')

@@ -1,10 +1,10 @@
-opcao = float(input('Escolha um número: '))
+num = float(input('Escolha um número: '))
 
-match opcao:
+match num:
     case 0:
-        print('Zero')
-    case _ if opcao > 0:
-        print('Positivo')
-    case _ if opcao < 0:
-        print('Negativo')
+        print(f'O número escolhido é igual a zero')
+    case num if num > 0:
+        print(f'O número {num} escolhido é positivo')
+    case num if num < 0:
+        print(f'O número {num} escolhido é negativo')
 
