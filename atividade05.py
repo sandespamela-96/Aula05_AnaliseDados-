@@ -1,4 +1,4 @@
-opcao = int(input('Escolha um número: '))
+opcao = float(input('Escolha um número: '))
 
 match opcao:
     case 0:
